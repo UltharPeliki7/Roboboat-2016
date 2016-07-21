@@ -6,7 +6,8 @@ Onboard sensors currently installed:
 Lidar on a servo that can pan in the xy plane in a 180 degree arc WRT the boat
 1080p Webcam in front with a 90 degree FoV
 4 Ultrasonic sensors
-A GPS/Magnetometer unit
+A GPS -3DR Robotics Module
+Magnetometer hmc5883l
 
 Sensors at disposal:
 2 Ultrasonic sensors
