@@ -1,0 +1,115 @@
+<?xml version="1.0"?>
+<robot name="boat">
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <mesh filename="package://pr2_description/meshes/boat/boat_hull_scaled.dae"/>
+      </geometry>
+	<material name="white">
+        <color rgba="1 1 1 1"/>
+      </material>
+    </visual>
+  </link>
+
+ 
+<link name="FrontPost">
+    <visual>
+
+      <geometry>
+        <box size=".05 .1 .2"/>
+      </geometry>
+	<origin rpy="0 1.57075 0" xyz="0.72 0 .2"/>
+	<material name="white">
+        <color rgba="1 1 1 1"/>
+      </material>
+    </visual>
+  </link>
+<joint name="FrontPost" type="fixed">
+    <parent link="base_link"/>
+    <child link="FrontPost"/>
+  </joint>
+<link name="Lidar">
+    <visual>
+
+      <geometry>
+        <box size=".05 .05 .05"/>
+      </geometry>
+	<origin rpy="0 1.57075 0" xyz="0 0 0"/>
+	<material name="blue">
+        <color rgba="0 0 .8 1"/>
+      </material>
+    </visual>
+  </link>
+<joint name="Lidar_link" type="revolute">
+    <axis xyz="0 0 1"/>
+    <limit effort="1000.0" lower="-1.5" upper="1.5" velocity="0.5"/>
+<origin rpy="0 0 0" xyz="0.79 0 0.25"/>
+    <parent link="base_link"/>
+    <child link="Lidar"/>
+  </joint>
+
+
+<link name="US1">
+    <visual>
+      <geometry>
+        <box size=".1 .1 .1"/>
+      </geometry>
+	<origin rpy="0 1.57075 0" xyz=".5 .22 .15"/>
+	<material name="blue">
+        <color rgba="0 0 .8 1"/>
+      </material>
+    </visual>
+  </link>
+<joint name="US1" type="fixed">
+    <parent link="base_link"/>
+    <child link="US1"/>
+  </joint>
+<link name="US2">
+    <visual>
+      <geometry>
+        <box size=".1 .1 .1"/>
+      </geometry>
+	<origin rpy="0 1.57075 0" xyz=".5 -.22 .15"/>
+	<material name="blue">
+        <color rgba="0 0 .8 1"/>
+      </material>
+    </visual>
+  </link>
+<joint name="US2" type="fixed">
+    <parent link="base_link"/>
+    <child link="US2"/>
+  </joint>
+<link name="US4">
+    <visual>
+      <geometry>
+        <box size=".1 .1 .1"/>
+      </geometry>
+	<origin rpy="0 1.57075 0" xyz="0 -.3 .15"/>
+	<material name="blue">
+        <color rgba="0 0 .8 1"/>
+      </material>
+    </visual>
+  </link>
+<joint name="US4" type="fixed">
+    <parent link="base_link"/>
+    <child link="US4"/>
+  </joint>
+<link name="US3">
+    <visual>
+      <geometry>
+        <box size=".1 .1 .1"/>
+      </geometry>
+	<origin rpy="0 1.57075 0" xyz="0 .3 .15"/>
+	<material name="blue">
+        <color rgba="0 0 .8 1"/>
+      </material>
+    </visual>
+  </link>
+<joint name="US3" type="fixed">
+    <parent link="base_link"/>
+    <child link="US3"/>
+  </joint>
+
+
+</robot>
+
