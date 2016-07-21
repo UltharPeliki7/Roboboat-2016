@@ -14,8 +14,12 @@ Sensors at disposal:
 3 Cameras
 2 IMUs
 
-To Be Completed:
+Completed:
 Lidar refresh rate: Currently <100 readings per second, needs to be converted to >500 per second for optimal scan speeds
+At 700+ per second
+
+
+To Be Completed:
 Gps/Magnetometer: Magnetometer code currently not working, arduino atmega board is suspect, signal is reading(incorrectly) for a short period then cutting off.
 OpenCV: Currently not integrated into the navigation file. Works based on color detection and a best fit circle, and a set buoy size. Will misread larger buoys as being closer than they actually are.
 Ultrasonic sensor: Currently not being used very well, positioning on US1 & US2 could be moved further forward, and US3 & US4 could be moved further backward to aid in obstacle avoidance. Reading angle unknown, ideally would be improved upon.
