@@ -1,5 +1,5 @@
 # Roboboat -2016
-This year we embark upon a great journey #sarcasm
+This year we embark upon a great journey
 Our intent here is to integrate sophisticated machine learning algorithms with existing computer vision software to complete the obstacle avoidance, pattern recognition, and various other task requirements of the 2017 Roboboat competition.
 
 Onboard sensors currently installed:
