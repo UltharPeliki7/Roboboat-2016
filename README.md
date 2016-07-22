@@ -3,7 +3,7 @@
 Our intent here is to integrate sophisticated machine learning algorithms with existing computer vision software to complete the obstacle avoidance, pattern recognition, and various other task requirements of the 2017 Roboboat competition.
 
 
---------------------------------------------Onboard sensors currently installed-----------------------------------------------
+Onboard sensors currently installed-----------------------------------------------------------------------------------------
 
 Lidar on a servo that can pan in the xy plane in a 180 degree arc WRT the boat
 1080p Webcam in front with a 90 degree FoV
@@ -18,7 +18,7 @@ Sensors at disposal:
 2 IMUs
 
 
-----------------------------------------------------------Completed---------------------------------------------------------
+Completed--------------------------------------------------------------------------------------------------------------------
 
 Lidar refresh rate: Currently <100 readings per second, needs to be converted to >500 per second for optimal scan speeds
 At 700+ per second
@@ -27,7 +27,7 @@ Motor disassembly:
 http://docs.bluerobotics.com/tutorials/disassembly-assembly/
 
 
---------------------------------------------------------To Be Completed------------------------------------------------------
+To Be Completed--------------------------------------------------------------------------------------------------------------
 
 Gps/Magnetometer: Magnetometer code currently not working
 
@@ -43,7 +43,7 @@ Create a "webserver" on the boat that will broadcast what the boat is thinking
 
 
 
----------------------------------------------------------Future plans---------------------------------------------------------
+Future plans------------------------------------------------------------------------------------------------------------------
 
 If boat is to be kept, installation of a gyroscopic stabilizer should be mandatory.
 
