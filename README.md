@@ -4,6 +4,7 @@ Our intent here is to integrate sophisticated machine learning algorithms with e
 
 
 --------------------------------------------Onboard sensors currently installed-----------------------------------------------
+
 Lidar on a servo that can pan in the xy plane in a 180 degree arc WRT the boat
 1080p Webcam in front with a 90 degree FoV
 4 Ultrasonic sensors
@@ -18,6 +19,7 @@ Sensors at disposal:
 
 
 ----------------------------------------------------------Completed---------------------------------------------------------
+
 Lidar refresh rate: Currently <100 readings per second, needs to be converted to >500 per second for optimal scan speeds
 At 700+ per second
 
