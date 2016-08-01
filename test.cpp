@@ -248,7 +248,7 @@ std::string classifyStopLight(cv::Mat img, std::vector<colorStruct>& lights) {
 
     /* write "Hi" to the FIFO */
     fd = open(myfifo, O_WRONLY);
-    write(fd, "Hi", sizeof("Hi"));
+
 
                // ofstream toTxt;
                // toTxt.open("para.txt");
@@ -256,10 +256,16 @@ std::string classifyStopLight(cv::Mat img, std::vector<colorStruct>& lights) {
                 if(i==0){
                   //  toTxt<<"red"<<std::endl;
                     std::cout<<"RED"<<std::endl;
+                    write(fd, "RED",sizeof("RED"));
                 } else if (i==1){
                   //  toTxt<<"green"<<std::endl;
                     std::cout<<"GREEN"<<std::endl;
+                     write(fd, "GREEN",sizeof("GREEN"));
                 }
+ write(fd, "distance  => ",sizeof("distance  => "));
+//write(fd, ,sizeof("distance"));
+write(fd, "angle  => ",sizeof("distance  => "));
+//write(fd, angleEstimate,sizeof("distance"));
 
                 std::cout<<"distance  => "<<distanceEstimate<<std::endl;
                 std::cout<<"angle  => "<<angleEstimate<<std::endl;
