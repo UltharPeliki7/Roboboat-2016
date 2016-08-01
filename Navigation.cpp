@@ -12,8 +12,14 @@
 #include <sstream>
 #include <iomanip>
 #include <fstream>
+//pipe stuff
+#include <fcntl.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <unistd.h>
 
-
+#define MAX_BUF 1024
+//end of pipe stuff
 
 using namespace std; 								//Dock is W 10ft x  L 8ft 
 
@@ -445,6 +451,15 @@ while (ros::ok())
         fread.close();
 //////////////////////////////////////////////////////////////////////////////////////
 */
+int fd;
+    char * myfifo = "/tmp/myfifo";
+    char buf[MAX_BUF];
+
+    /* open, read, and display the message from the FIFO */
+    fd = open(myfifo, O_RDONLY);
+    read(fd, buf, MAX_BUF);
+    printf("Received: %s\n", buf);
+    //close(fd);
 
  	
 	std_msgs::Int16 Lmsg;					//Sets up the messages to be read to send to the thrusters
