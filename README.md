@@ -26,12 +26,14 @@ At 700+ per second
 Motor disassembly:
 http://docs.bluerobotics.com/tutorials/disassembly-assembly/
 
+OpenCV
 
 To Be Completed--------------------------------------------------------------------------------------------------------------
 
-Gps/Magnetometer: Magnetometer code currently not working
+Uniform bootup script, titled "startup" can be run from terminal, which will compile main directory, and automate node startup/connection procedure. Can now write ACM0 instead of "rosrun rosserial_python serial_node.py /dev/ttyACM0", speeding up manual startup
 
-OpenCV: Currently not integrated into the navigation file. Works based on color detection and a best fit circle, and a set buoy size. Will misread larger buoys as being closer than they actually are.
+Gps/Magnetometer: Magnetometer code currently not working, new Magnetometer purchased
+
 
 Ultrasonic sensor: Currently not being used very well, positioning on US1 & US2 could be moved further forward, and US3 & US4 could be moved further backward to aid in obstacle avoidance. Reading angle unknown, ideally would be improved upon.
 
