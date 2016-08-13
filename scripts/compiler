@@ -1,0 +1,7 @@
+#!/bin/bash
+# Script to Compile main directory
+
+echo "cding to Monarch"
+cd Monarch
+echo "compiling"
+catkin_make

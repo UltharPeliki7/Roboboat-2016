@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=ROSconnect
+Type=Application
+Exec=dex /home/oduasv/ROSconnect.desktop
+Terminal=false
+Path=/home/oduasv/

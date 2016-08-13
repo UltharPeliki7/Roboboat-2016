@@ -1,0 +1,5 @@
+#!/bin/bash
+# Script to run Roscore
+
+echo "running Roscore"
+roscore

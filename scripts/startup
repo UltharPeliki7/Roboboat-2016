@@ -1,0 +1,32 @@
+#!/bin/bash
+# Script for startup procedure
+source /opt/ros/jade/setup.bash
+ 
+# This prevents us from having to run this command each time we build the project. This $
+# node from the Navigation.cpp file.
+source ~/Monarch/devel/setup.bash
+ 
+ 
+export ROS_PACKAGE_PATH=/home/oduasv/Monarch/src:$ROS_PACKAGE_PATH
+printenv > /home/oduasv/env.txt
+echo "Starting ROS"
+cd / && teamviewer & sleep 1
+cd ~/ 
+gnome-terminal -e compiler & sleep 5
+cd ~/
+gnome-terminal -e  run_roscore & sleep 4
+cd ~/
+gnome-terminal -e  ACM0 &
+cd ~/
+gnome-terminal -e ACM1 &
+cd ~/
+gnome-terminal -e ACM2 &
+cd ~/
+gnome-terminal -e ACM3 &
+cd ~/
+gnome-terminal -e ACM4 &
+cd ~/
+gnome-terminal  -e ACM5 &
+sleep 5
+cd ~/
+gnome-terminal -e cd Monarch && rosrun boat Navigation

@@ -1,0 +1,5 @@
+#!/bin/bash
+# Script to run ACM5
+
+echo "running arduino on port 5"
+rosrun rosserial_python serial_node.py /dev/ttyACM5
