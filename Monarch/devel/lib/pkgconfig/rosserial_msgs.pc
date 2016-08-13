@@ -1,0 +1,8 @@
+prefix=/home/oduasv/Monarch/devel
+
+Name: rosserial_msgs
+Description: Description of rosserial_msgs
+Version: 0.7.1
+Cflags: -I/home/oduasv/Monarch/devel/include
+Libs: -L/home/oduasv/Monarch/devel/lib 
+Requires: message_runtime

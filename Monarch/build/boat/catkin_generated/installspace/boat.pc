@@ -1,0 +1,8 @@
+prefix=/home/oduasv/Monarch/install
+
+Name: boat
+Description: Description of boat
+Version: 0.0.0
+Cflags: -I/home/oduasv/Monarch/install/include
+Libs: -L/home/oduasv/Monarch/install/lib -lboat
+Requires: roscpp rospy sensor_msgs std_msgs

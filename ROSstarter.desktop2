@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=ROSconnect
+Type=Application
+Exec=gnome-terminal -e startup
+Terminal=false
+Path=/home/oduasv/

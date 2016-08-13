@@ -1,0 +1,8 @@
+prefix=/home/oduasv/Monarch/install
+
+Name: boat
+Description: Description of boat
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/oduasv/Monarch/install/lib 
+Requires: 

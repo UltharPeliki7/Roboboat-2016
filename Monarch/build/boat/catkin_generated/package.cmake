@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "boat")
+set(boat_MAINTAINER "oduasv <oduasv@todo.todo>")
+set(boat_DEPRECATED "")
+set(boat_VERSION "0.0.0")
+set(boat_BUILD_DEPENDS "roscpp" "rospy" "sensor_msgs" "std_msgs")
+set(boat_RUN_DEPENDS "roscpp" "rospy" "sensor_msgs" "std_msgs")
+set(boat_BUILDTOOL_DEPENDS "catkin")

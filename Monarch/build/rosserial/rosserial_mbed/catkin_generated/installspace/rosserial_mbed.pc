@@ -1,0 +1,8 @@
+prefix=/home/oduasv/Monarch/install
+
+Name: rosserial_mbed
+Description: Description of rosserial_mbed
+Version: 0.7.1
+Cflags: -I/home/oduasv/Monarch/install/include
+Libs: -L/home/oduasv/Monarch/install/lib 
+Requires: message_runtime
